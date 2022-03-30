@@ -1,38 +1,139 @@
-.App {
+body {
+  background-color: #e4e4e4;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.quiz {
+  width: 975px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.question {
+  background-color: #0a473b;
+  color: white;
+  padding: 10px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.results {
+  background-color: #fff;
+  height: 300px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.ggwp {
+  background-color: #0a473b;
+  padding: 20px;
+  font-size: 36px;
+  color: #fff;
+}
+
+.results-info {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.answer {
+  width: 48%;
+  background: #fff;
+  border: 2px solid #0a473b;
+  min-height: 70px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.answer-letter {
+  font-size: 30px;
+  background-color: #0a473b;
+  color: #fff;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.answer-text {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.correct-answer {
+  border: 2px solid #0a473b;
+}
+
+.correct-answer .answer-letter {
+  background: #1ea55b;
+}
+
+.wrong-answer {
+  border: 2px solid #dc0a0a;
+}
+
+.wrong-answer .answer-letter {
+  background: #dc0a0a;
+}
+
+.next-button,
+.res-button {
+  margin: 0 auto;
+  color: #fff;
+  background: #0725ee;
+  width: 300px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 14px 75px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+}
+.res-button {
+  margin-top: 50px;
+}
+
+.score {
+  background: #0a473b;
+  color: #fff;
+  font-size: 18px;
+  width: 200px;
+  margin: 0 auto;
+  font-weight: 600;
+  height: 40px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.disabled-answer {
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.count {
+  color: #1ea55b;
+  font-size: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.questions-length {
+  color: rgb(194, 194, 59);
+  font-size: 25px;
 }
